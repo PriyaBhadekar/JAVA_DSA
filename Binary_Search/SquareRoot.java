@@ -15,10 +15,13 @@ public class SquareRoot {
             if((long) mid * mid == n){
                 return mid;
             }else if((long) mid * mid < n){
-                ans = mid;
-                left = mid + 1;
+                //Storing the possible root (floor)
+                ans = mid;  
+                // Moving to right to find next possible root
+                left = mid + 1; 
             }else{
-                right = mid - 1;
+                // if mid * mid > n then it is not root hence move to lower bound(part) of searching range
+                right = mid - 1; 
             }
         }
         return ans;
