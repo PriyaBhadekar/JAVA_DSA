@@ -4,7 +4,7 @@
 
 
 package Arrays;
-import java.util.*;
+
 public class Product_of_min_sum {
     
     public static int productofminsum(int [] arr , int sum){
