@@ -2,6 +2,7 @@ package Binary_Search;
 
 public class RootNumber {
     
+    // Funtion to find the power of mid
     public static int power(int base , int exponent){
         int result = 1;
 
@@ -27,14 +28,20 @@ public class RootNumber {
             mid = left + (right - left) / 2;
             ans = power(mid, N);
 
+            //check if N power of mid == M then return the mid
             if(ans == M){
                 return mid;
-            }else if(ans < M){
+            }
+            //if N power of mid < M then search right side or upper bound
+            else if(ans < M){
                 left = mid + 1;
-            }else{
+            }
+            //if N power of mid > M then search left side or lower bound
+            else{
                 right = mid - 1;
             }
         }
+        //if M is not found then return -1;
         return -1;
     }
 
