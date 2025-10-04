@@ -3,6 +3,7 @@ package Sorting;
 // Selection sort: an improved version of bubble sort
 // It limits to only one swap per pass
 // Repeatedly selects the largest element and puts it in its correct position
+// Also has the time complexity of O(n2) for all cases
 
 public class SelectionSort_Implement {
     public static void main(String[] args) {
