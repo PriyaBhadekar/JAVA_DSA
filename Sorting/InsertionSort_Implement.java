@@ -3,7 +3,7 @@ package Sorting;
 public class InsertionSort_Implement {
     public static void main(String[] args) {
         
-        int[] arr = {2, 8, 5, 3, 9, 4};
+        int[] arr = {2,  8, 5, 3, 9, 4};
 
         int i, j, v;
 
